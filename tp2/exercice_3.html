@@ -1,0 +1,60 @@
+<html>
+<head>
+<style> .Nombres {color: red;background-color:blue;}</style>
+</head>
+<body>
+<script language="javascript">
+document.write ("<center>"); /* juste pour centrer ma soltion*/
+/* Créer la table avec une seule ligne, on peut ne pas mettre < tr >*/
+
+// 1
+document.write ("<table border=1 cellspacing=0>");
+for (var i=200;i<210;i++)
+{
+
+/* Créer une ligne */
+
+document.write ("<td align=center class=Nombres>",i,"</td>");
+}
+document.write ("</table>");
+document.write ("</br>");
+
+//2
+document.write ("<table border=1 cellspacing=0>");
+for (var i=209;i>=200;i--)
+{
+document.write ("<td align=center class=Nombres>",i,"</td>");
+}
+document.write ("</table>");
+document.write ("</br>");
+
+//3
+document.write ("<table border=1 cellspacing=0 width=100%>");
+for (var i=209;i>=200;i--)
+{
+document.write ("<td align=right class=Nombres>",i,"</td>");
+}
+document.write ("</table>");
+document.write ("</br>");
+
+//4
+document.write ("<table border=1 cellspacing=0 width=100%>");
+let x = 200;
+for (var i=0;i<3;i++)
+{
+    document.write ("<tr>");
+    for (var j = 0 ; j<5 ;j++){
+        if ( i === 0){
+            document.write ("<th align=center style='color: blue; background-color:yellow;'> Nombers ",j+1,"</th>");
+        }else {
+            
+            document.write ("<td align=right class=Nombres>",x++,"</td>");
+        }
+    }
+    document.write ("</tr>");
+
+}
+document.write ("</table>");
+</script>
+</body>
+</html>
